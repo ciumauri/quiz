@@ -146,8 +146,10 @@ class QuizInterface:
                 if options[user_answer] == options[correct_answer]:
                     print("Resposta correta!")
                     self.correct_answers += 1  # Increment the correct answer count
+                    print(f"Respostas corretas {self.correct_answers}")
                 else:
                     print(f"Resposta incorreta. A resposta correta era a opção {correct_answer}.")
+                    print(f"Respostas corretas {self.correct_answers}")
             else:
                 print("Opção inválida. Tente novamente.")
 
