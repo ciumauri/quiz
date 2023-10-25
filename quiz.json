@@ -1,0 +1,136 @@
+{
+    "questions": [
+        {
+            "theme": "geografia",
+            "difficulty": 0,
+            "question": "Qual é a capital da França?",
+            "options": {
+                "a": "Londres",
+                "b": "Berlim",
+                "c": "Paris",
+                "d": "Madrid"
+            },
+            "ca": "c"
+        },
+        {
+            "theme": "literatura",
+            "difficulty": 1,
+            "question": "Quem escreveu a peça 'Romeu e Julieta'?",
+            "options": {
+                "a": "William Shakespeare",
+                "b": "Charles Dickens",
+                "c": "Jane Austen",
+                "d": "F. Scott Fitzgerald"
+            },
+            "ca": "a"
+        },
+        {
+            "theme": "literatura",
+            "difficulty": 0,
+            "question": "Quem é o autor de 'Dom Quixote'?",
+            "options": {
+                "a": "Friedrich Nietzsche",
+                "b": "Fyodor Dostoevsky",
+                "c": "Leo Tolstoy",
+                "d": "Miguel de Cervantes"
+            },
+            "ca": "d"
+        },
+        {
+            "theme": "literatura",
+            "difficulty": 2,
+            "question": "Qual romance de Jane Austen apresenta a protagonista Elizabeth Bennet?",
+            "options": {
+                "a": "Emma",
+                "b": "Persuasão",
+                "c": "Mansfield Park",
+                "d": "Orgulho e Preconceito"
+            },
+            "ca": "d"
+        },
+        {
+            "theme": "geografia",
+            "difficulty": 0,
+            "question": "Qual é a capital do Brasil?",
+            "options": {
+                "a": "Rio de Janeiro",
+                "b": "São Paulo",
+                "c": "Brasília",
+                "d": "Belo Horizonte"
+            },
+            "ca": "c"
+        },
+        {
+            "theme": "literatura",
+            "difficulty": 1,
+            "question": "Quem é o autor de 'Matar um Rouxinol'?",
+            "options": {
+                "a": "Harper Lee",
+                "b": "John Steinbeck",
+                "c": "Mark Twain",
+                "d": "Harper Lee"
+            },
+            "ca": "a"
+        },
+        {
+            "theme": "geografia",
+            "difficulty": 2,
+            "question": "Qual é o país mais populoso do mundo?",
+            "options": {
+                "a": "Índia",
+                "b": "Estados Unidos",
+                "c": "China",
+                "d": "Brasil"
+            },
+            "ca": "c"
+        },
+        {
+            "theme": "literatura",
+            "difficulty": 0,
+            "question": "Qual é o título do livro de George Orwell que descreve um estado totalitário?",
+            "options": {
+                "a": "1984",
+                "b": "Revolução dos Bichos",
+                "c": "Fahrenheit 451",
+                "d": "Admirável Mundo Novo"
+            },
+            "ca": "a"
+        },
+        {
+            "theme": "geografia",
+            "difficulty": 2,
+            "question": "Qual é a capital da Bolívia?",
+            "options": {
+                "a": "La Paz",
+                "b": "Sucre",
+                "c": "Santa Cruz de La Sierra",
+                "d": "Luis Arce"
+            },
+            "ca": "b"
+        },
+        {
+            "theme": "geografia",
+            "difficulty": 1,
+            "question": "Qual é o maior oceano do mundo?",
+            "options": {
+                "a": "Oceano Atlântico",
+                "b": "Oceano Índico",
+                "c": "Oceano Pacífico",
+                "d": "Mar Mediterrâneo"
+            },
+            "ca": "c"
+        },
+        {
+            "theme": "geografia",
+            "difficulty": 2,
+            "question": "Qual é o rio mais longo do mundo?",
+            "options": {
+                "a": "Nilo",
+                "b": "Amazonas",
+                "c": "Mississipi",
+                "d": "Yangtzé"
+            },
+            "ca": "a"
+        }
+    ]
+}
