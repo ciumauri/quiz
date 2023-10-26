@@ -106,6 +106,7 @@ class QuizInterface:
 
             if choice == '1':
                 self.select_questions_by_difficulty()
+                break
             elif choice == '2':
                 self.select_questions_by_theme()
             elif choice == '3':
