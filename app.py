@@ -68,10 +68,13 @@ class StrategyFactory:
 
 # Singleton para carregar dados
 class DataManager:
+    # instance = None
     def __init__(self, filename):
         with open(filename, "r") as f:
             data = json.load(f)
             self.questions = data['questions']
+
+    # __new__()
 
     def select_questions(self, strategy_name, **criteria):
         strategy = StrategyFactory.create_strategy(strategy_name)
