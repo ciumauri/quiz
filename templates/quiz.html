@@ -1,0 +1,60 @@
+{% from "showlinks.html" import show_links %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}" />
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header mb-2">
+            {{ show_links(user) }}
+        </div>
+        <div class="questions_aswared container text-light p-3">
+            <h1>Quiz</h1>
+            {% if error %}
+            <h4 class="text-danger">{{ error }}</h4>
+            {% endif %}
+            <hr class="text-light" />
+            <form id="quiz-form" method="POST" action="{{ url_for('quiz') }}">
+                <div class="question">
+                    <h4>{{ current_question_index + 1 }}ª {{ current_question.question }}</h4>
+                    <div class="options">
+                        <ul class="list-group mb-3">
+                            <label for="optionA" class="list-group-item">
+                                <input type="radio" id="optionA" name="question{{ current_question_index }}" value="a">
+                                <span>{{ current_question.options.a }}</span>
+                            </label>
+                            <label for="optionB" class="list-group-item">
+                                <input type="radio" id="optionB" name="question{{ current_question_index }}" value="b">
+                                <span>{{ current_question.options.b }}</span>
+                            </label>
+                            <label for="optionC" class="list-group-item">
+                                <input type="radio" id="optionC" name="question{{ current_question_index }}" value="c">
+                                <span>{{ current_question.options.c }}</span>
+                            </label>
+                            <label for="optionD" class="list-group-item">
+                                <input type="radio" id="optionD" name="question{{ current_question_index }}" value="d">
+                                <span>{{ current_question.options.d }}</span>
+                            </label>
+                        </ul>
+                    </div>
+                </div>
+                <input type="hidden" name="current_question_index" value="{{ current_question_index }}">
+                <button type="submit" class="btn btn-primary" id="submit-button">Próxima</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

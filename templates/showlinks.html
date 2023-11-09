@@ -1,0 +1,38 @@
+{% macro show_links(user) %}
+<ul class="nav justify-content-center p-3">
+    <li class="nav-item">
+        <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('index') }}">Quiz App Flask</a>
+    </li>
+    {% if user %}
+    <li class="nav-item">
+        <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('quiz') }}">Quiz</a>
+    </li>
+    {% endif %}
+    {% if not user %}
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ url_for('login') }}">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ url_for('register') }}">Register</a>
+    </li>
+    {% endif %}
+
+    {% if user is defined and user['admin'] == 1 %}
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ url_for('allusers') }}">All users</a>
+    </li>
+    {% endif %}
+
+    {% if user %}
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{{ url_for('logout') }}">Logout</a>
+    </li>
+    {% endif %}
+
+    {% if user %}
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Usuário: {{ user['name'] }}</a>
+    </li>
+    {% endif %}
+</ul>
+{% endmacro %}

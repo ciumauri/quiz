@@ -1,0 +1,69 @@
+{% from "showlinks.html" import show_links %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}" />
+</head>
+
+<body>
+  <div class="parent">
+    <div class="header mb-2">
+      {{ show_links(user) }}
+    </div>
+    <div class="questions_aswared container text-light p-3">
+      <h1>Quiz App Flask</h1>
+      <hr class="text-light" />
+      <div class="card">
+        <img class=" card-img-top"
+          src="https://img.freepik.com/vetores-premium/logotipo-do-quiz-com-icone-de-bolha-de-fala_149152-811.jpg?w=826"
+          alt="Card image cap">
+        <div class="card-body">
+          <br>
+          <h4 class="card-title">Bem-vindo ao nosso Quiz de Perguntas Gerais!</h4><br>
+          <p class="card-text">Aqui, desafiamos sua mente com um jogo de conhecimento que abrange uma ampla gama de
+            tópicos. Seja você um aficionado por trivia ou apenas alguém em busca de diversão, nosso Quiz é perfeito
+            para testar seu intelecto, aprender coisas novas e se divertir ao mesmo tempo.
+            <br><br>
+          <h4 class="card-title">Como funciona?</h4><br>
+          <strong>Perguntas Variadas:</strong> Nosso Quiz de Perguntas Gerais é composto por uma coleção diversificada
+          de perguntas.
+          Desde ciência até cultura pop, história até tecnologia, há algo para todos.<br>
+          <br>
+          <strong>Dificuldade Ajustável:</strong> Você pode escolher a dificuldade do quiz, desde fácil até desafiador.
+          Isso permite que jogadores de todos os níveis de conhecimento desfrutem do jogo.<br>
+          <br>
+          <strong>Aprenda enquanto Joga:</strong> Nosso objetivo é educar e entreter. Cada resposta certa é uma
+          oportunidade para expandir seu conhecimento. Mesmo se você errar, não se preocupe, você ainda aprenderá algo
+          novo.<br>
+          <br>
+          <h4 class="card-title">Porque Jogar?</h4><br>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Melhore seu conhecimento geral.</li>
+            <li class="list-group-item">Desafie-se e seus amigos.</li>
+            <li class="list-group-item">Divirta-se enquanto aprende.</li>
+          </ol><br>
+          <br>
+          <strong>Pronto para Começar?</strong> Clique no botão abaixo e mergulhe em um mundo de curiosidades, fatos
+          interessantes e, é claro, diversão. Boa sorte, e que comece o Quiz de Perguntas Gerais!<br>
+          <br>
+          <form action="/quiz" method="get">
+            <button class="btn btn-success" type="submit">Ir para o Quiz!</button>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
