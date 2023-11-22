@@ -3,11 +3,22 @@
     <li class="nav-item">
         <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('index') }}">Quiz App Flask</a>
     </li>
-    {% if user %}
+    <!-- {% if user %}
     <li class="nav-item">
         <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('quiz') }}">Quiz</a>
-    </li>
+    </li>    
     {% endif %}
+    {% if user %}
+    <li class="nav-item">
+        <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('random_questions', count=10) }}">Random</a>
+    </li>    
+    <li class="nav-item">
+        <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('questions_by_theme', theme='literatura') }}">Perguntas por Tema</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('questions_by_difficulty', difficulty=0) }}">Perguntas por Dificuldade</a>
+    </li>   
+    {% endif %} -->
     {% if not user %}
     <li class="nav-item">
         <a class="nav-link text-dark" href="{{ url_for('login') }}">Login</a>

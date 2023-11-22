@@ -1,0 +1,50 @@
+{% from "showlinks.html" import show_links %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perguntas por Tema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}" />
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header mb-2">
+            {{ show_links(user) }}
+        </div>
+        <div class="questions container text-light p-3">
+            <h1>Perguntas por Tema</h1>
+            <hr class="text-light" />
+            <!-- Botões para selecionar tema -->
+            <div class="theme-select">
+                <a href="{{ url_for('questions_by_theme', theme='geografia') }}" class="btn btn-primary mt-3">Geografia</a>
+                <a href="{{ url_for('questions_by_theme', theme='literatura') }}" class="btn btn-primary mt-3">Literatura</a>
+                <!-- Adicione mais botões para outros temas, se necessário -->
+            </div>
+            <!-- Exibição das perguntas relacionadas ao tema selecionado -->
+            {% if questions %}
+            <div class="theme-questions mt-4">
+                <h3>Perguntas sobre {{ theme }}</h3>
+                <ul>
+                    {% for question in questions %}
+                    <li>
+                        <h4>{{ question.question }}</h4>
+                        <!-- Exibir opções de resposta, respostas corretas, etc. -->
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
