@@ -1,9 +1,9 @@
-from flask import Flask, render_template, url_for, request, g, redirect, session, jsonify
+from flask import Flask, render_template, url_for, request, g, redirect, session
 from flask_session import Session
 import json
 import random
 import os
-from database import connect_to_database, getDatabase
+from database import getDatabase
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
@@ -68,13 +68,18 @@ class StrategyFactory:
 
 # Singleton para carregar dados
 class DataManager:
-    # instance = None
-    def __init__(self, filename):
-        with open(filename, "r") as f:
-            data = json.load(f)
-            self.questions = data['questions']
+    _instance = None
 
-    # __new__()
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+    def __init__(self, filename):
+        if not hasattr(self, 'questions'):
+            with open(filename, "r") as f:
+                data = json.load(f)
+                self.questions = data['questions']
 
     def select_questions(self, strategy_name, **criteria):
         strategy = StrategyFactory.create_strategy(strategy_name)
