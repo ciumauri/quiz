@@ -76,16 +76,17 @@ class DataManager:
         return cls._instance
 
     def __init__(self, filename):
-        if not hasattr(self, 'questions'):
-            with open(filename, "r") as f:
-                data = json.load(f)
-                self.questions = data['questions']
+        self.questions = []
+        with open(filename, "r") as f:
+            data = json.load(f)
+            self.questions = data['questions']
 
     def select_questions(self, strategy_name, **criteria):
         strategy = StrategyFactory.create_strategy(strategy_name)
         return strategy.select_questions(self.questions, **criteria)
 
 ############################################################################################################################
+
 
 @app.teardown_appcontext
 def close_database(error):
@@ -163,7 +164,7 @@ def register():
             error = "Usuário existente, por favor escolha um usuário diferente."
             return render_template("register.html", error = error)
 
-        hashed_password = generate_password_hash(password, method='sha256')
+        hashed_password = generate_password_hash(password)
         db.execute("insert into users (name, password, user, admin) values (?, ?, ?, ?)", [name, hashed_password, 0, 0])
         db.commit()
         session['user'] = name
