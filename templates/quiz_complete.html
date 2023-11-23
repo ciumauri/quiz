@@ -23,13 +23,28 @@
 
             <h2>Resultado do Quiz</h2>
             <p>Você acertou {{ correct_answers }} de {{ total_questions }} perguntas!</p>
-            
+
             {% if percentage_correct >= 70 %}
-                <p>Parabéns! Você obteve uma excelente pontuação!</p>
+            <p>Parabéns! Você obteve uma excelente pontuação!</p>
             {% elif percentage_correct >= 50 %}
-                <p>Parabéns! Você se saiu bem, mas ainda pode melhorar!</p>
+            <p>Parabéns! Você se saiu bem, mas ainda pode melhorar!</p>
             {% else %}
-                <p>Infelizmente, sua pontuação foi abaixo de 50%. Tente novamente!</p>
+            <p>Infelizmente, sua pontuação foi abaixo de 50%. Tente novamente!</p>
+            {% endif %}
+
+            <h2>Perguntas Respondidas Incorretamente</h2>
+            {% if wrong_questions %}
+            <ul>
+                {% for question in wrong_questions %}
+                <li>
+                    <strong>Pergunta:</strong> {{ question.question }}<br>
+                    <strong>Sua Resposta:</strong> {{ question.user_answer_key }} - {{ question.user_answer_value }}<br>
+                    <strong>Resposta Correta:</strong> {{ question.correct_answer_key }} - {{ question.correct_answer_value }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>Você respondeu corretamente a todas as perguntas!</p>
             {% endif %}
 
             <a href="{{ url_for('index') }}" class="btn btn-primary">Recomeçar</a>

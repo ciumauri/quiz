@@ -87,7 +87,6 @@ class DataManager:
 
 ############################################################################################################################
 
-
 @app.teardown_appcontext
 def close_database(error):
     if hasattr(g, 'quizapp_db'):
@@ -204,12 +203,25 @@ def process_question_response(user_answer, questions, current_question_index, re
         correct_answer = questions[current_question_index]['ca']
 
         if user_answer == correct_answer:
-            # Incrementar a contagem de respostas corretas na sessão
             session['correct_answers'] = session.get('correct_answers', 0) + 1
+        else:
+            # Obtém a lista de perguntas erradas da sessão ou cria uma nova lista
+            wrong_questions = session.get('wrong_questions', [])
+            # Adiciona a pergunta respondida incorretamente à lista
+            wrong_question_data = {
+                'question': questions[current_question_index]['question'],
+                'user_answer_key': user_answer,  # Chave da resposta do usuário (letra)
+                'user_answer_value': questions[current_question_index]['options'][user_answer],  # Valor da resposta do usuário
+                'correct_answer_key': correct_answer,  # Chave da resposta correta (letra)
+                'correct_answer_value': questions[current_question_index]['options'][correct_answer],  # Valor da resposta correta
+            }
+            wrong_questions.append(wrong_question_data)
+            # Atualiza a lista de perguntas erradas na sessão
+            session['wrong_questions'] = wrong_questions
 
         current_question_index += 1
     else:
-        # O usuário não fez uma seleção, exibir uma mensagem de erro
+        # Se o usuário não fez uma seleção, exibir mensagem de erro
         error = "Por favor, selecione uma opção antes de avançar para a próxima pergunta."
         current_question = questions[current_question_index]
         current_question['correct_answer'] = questions[current_question_index]['ca']
@@ -368,7 +380,10 @@ def quiz_complete():
     session.pop('correct_answers', None)
     session.pop('questions', None)  # Limpa as perguntas da sessão
 
-    return render_template("quiz_complete.html", user=user, correct_answers=correct_answers, total_questions=total_questions, percentage_correct=percentage_correct)
+    wrong_questions = session.get('wrong_questions', [])
+    session.pop('wrong_questions', None)  # Limpa a lista de perguntas erradas da sessão
+
+    return render_template("quiz_complete.html", user=user, correct_answers=correct_answers, total_questions=total_questions, percentage_correct=percentage_correct, wrong_questions=wrong_questions)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
