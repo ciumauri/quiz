@@ -18,14 +18,15 @@
             {{ show_links(user) }}
         </div>
         <div class="questions_aswared container text-light p-3">
-            <h1>Quiz</h1>
+            <h1>Perguntas Gerais</h1>
             {% if error %}
             <h4 class="text-danger">{{ error }}</h4>
             {% endif %}
             <hr class="text-light" />
+            <h3>Pergunta {{ current_question_index + 1 }}</h3>
             <form id="quiz-form" method="POST" action="{{ url_for('quiz') }}">
                 <div class="question">
-                    <h4>{{ current_question_index + 1 }}ª {{ current_question.question }}</h4>
+                    <h4>{{ current_question.question }}</h4>
                     <div class="options">
                         <ul class="list-group mb-3">
                             {% for option_key, option_text in current_question.options.items() %}
@@ -38,7 +39,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="current_question_index" value="{{ current_question_index }}">
-                <button type="submit" class="btn btn-primary" id="submit-button">Próxima</button>
+                <button type="submit" class="btn btn-success" id="submit-button">Próxima</button>
             </form>
         </div>
     </div>

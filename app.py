@@ -197,53 +197,81 @@ def logout():
     session.pop('user', None)
     return redirect(url_for('index'))
 
-
-def process_question_response(user_answer, questions, current_question_index, redirect_route, count=None):
+def process_question_response(user_answer, questions, current_question_index, redirect_route, theme=None, count=None, difficulty=None):
     if user_answer is not None and user_answer != "":
         correct_answer = questions[current_question_index]['ca']
 
         if user_answer == correct_answer:
             session['correct_answers'] = session.get('correct_answers', 0) + 1
         else:
-            # Obtém a lista de perguntas erradas da sessão ou cria uma nova lista
             wrong_questions = session.get('wrong_questions', [])
-            # Adiciona a pergunta respondida incorretamente à lista
             wrong_question_data = {
                 'question': questions[current_question_index]['question'],
-                'user_answer_key': user_answer,  # Chave da resposta do usuário (letra)
-                'user_answer_value': questions[current_question_index]['options'][user_answer],  # Valor da resposta do usuário
-                'correct_answer_key': correct_answer,  # Chave da resposta correta (letra)
-                'correct_answer_value': questions[current_question_index]['options'][correct_answer],  # Valor da resposta correta
+                'user_answer_key': user_answer,
+                'user_answer_value': questions[current_question_index]['options'][user_answer],
+                'correct_answer_key': correct_answer,
+                'correct_answer_value': questions[current_question_index]['options'][correct_answer],
             }
             wrong_questions.append(wrong_question_data)
-            # Atualiza a lista de perguntas erradas na sessão
             session['wrong_questions'] = wrong_questions
 
         current_question_index += 1
     else:
-        # Se o usuário não fez uma seleção, exibir mensagem de erro
         error = "Por favor, selecione uma opção antes de avançar para a próxima pergunta."
         current_question = questions[current_question_index]
         current_question['correct_answer'] = questions[current_question_index]['ca']
         if redirect_route == 'quiz':
             return render_template("quiz.html", current_question=current_question, current_question_index=current_question_index, questions=questions, error=error)
-        else:
+        elif redirect_route == 'random_questions':
             return render_template("random.html", current_question=current_question, current_question_index=current_question_index, questions=questions, error=error)
+        elif redirect_route == 'questions_by_theme':
+            return render_template("by_theme.html", current_question=current_question, current_question_index=current_question_index, questions=questions, error=error, theme=theme)
+        elif redirect_route == 'questions_by_difficulty':
+            return render_template("by_difficulty.html", current_question=current_question, current_question_index=current_question_index, questions=questions, error=error, difficulty=difficulty)
 
-    # Verificar se ainda há perguntas restantes
+    if current_question_index >= len(questions):
+        if redirect_route == 'quiz':
+            return redirect(url_for('quiz_complete'))
+        elif redirect_route == 'random_questions':
+            return redirect(url_for('quiz_complete'))
+        elif redirect_route == 'questions_by_theme':
+            theme_questions = session.get('theme_questions', [])
+            theme_questions.extend(questions)  # Adiciona as perguntas do tema à lista
+            session['theme_questions'] = theme_questions
+            return redirect(url_for('quiz_complete'))
+        elif redirect_route == 'questions_by_difficulty':
+            difficulty_questions = session.get('difficulty_questions', [])
+            difficulty_questions.extend(questions)  # Adiciona as perguntas por dificuldade à lista
+            session['difficulty_questions'] = difficulty_questions
+            return redirect(url_for('quiz_complete'))
+
     if 0 <= current_question_index < len(questions):
         current_question = questions[current_question_index]
         current_question['correct_answer'] = questions[current_question_index]['ca']
     else:
         if redirect_route == 'quiz':
             return redirect(url_for('quiz_complete'))
-        else:
+        elif redirect_route == 'random_questions':
+            return redirect(url_for('quiz_complete'))
+        elif redirect_route == 'questions_by_theme':
+            theme_questions = session.get('theme_questions', [])
+            theme_questions.extend(questions)  # Adiciona as perguntas do tema à lista
+            session['theme_questions'] = theme_questions
+            return redirect(url_for('quiz_complete'))
+        elif redirect_route == 'questions_by_difficulty':
+            difficulty_questions = session.get('difficulty_questions', [])
+            difficulty_questions.extend(questions)  # Adiciona as perguntas por dificuldade à lista
+            session['difficulty_questions'] = difficulty_questions
             return redirect(url_for('quiz_complete'))
 
     if redirect_route == 'quiz':
         return render_template("quiz.html", current_question=current_question, current_question_index=current_question_index, questions=questions)
-    else:
+    elif redirect_route == 'random_questions':
         return render_template("random.html", current_question=current_question, current_question_index=current_question_index, questions=questions, count=count)
+    elif redirect_route == 'questions_by_theme':
+        return render_template("by_theme.html", current_question=current_question, current_question_index=current_question_index, questions=questions, theme=theme)
+    elif redirect_route == 'questions_by_difficulty':
+        return render_template("by_difficulty.html", current_question=current_question, current_question_index=current_question_index, questions=questions, difficulty=difficulty)
 
 
 @app.route('/quiz', methods=["GET", "POST"])
@@ -313,14 +341,19 @@ def questions_by_difficulty(difficulty):
     data_manager = DataManager("quiz.json")
     questions = data_manager.select_questions('difficulty', difficulty=difficulty)
 
-    # Armazena as perguntas na sessão
-    session['questions'] = questions
+    # Armazena as perguntas na sessão se ainda não estiverem armazenadas
+    if 'questions' not in session:
+        session['questions'] = questions
 
     current_question_index = int(request.form.get('current_question_index', 0))
 
     if request.method == "POST":
         user_answer = request.form.get(f'question{current_question_index}')
-        return process_question_response(user_answer, questions, current_question_index, 'difficulty', difficulty=difficulty)
+        response = process_question_response(user_answer, questions, current_question_index, 'difficulty', difficulty=difficulty)
+        if response is not None:
+            return response
+        else:
+            current_question_index += 1  # Avança para a próxima pergunta
 
     if 0 <= current_question_index < len(questions):
         current_question = questions[current_question_index]
@@ -330,6 +363,7 @@ def questions_by_difficulty(difficulty):
         return redirect(url_for('quiz_complete'))
 
     return render_template("by_difficulty.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, difficulty=difficulty)
+
 
 
 @app.route('/questions/theme/<theme>', methods=['GET', 'POST'])
@@ -349,7 +383,7 @@ def questions_by_theme(theme):
 
     if request.method == "POST":
         user_answer = request.form.get(f'question{current_question_index}')
-        return process_question_response(user_answer, questions, current_question_index, 'theme', theme=theme)
+        return process_question_response(user_answer, questions, current_question_index, 'questions_by_theme', theme=theme)
 
     if 0 <= current_question_index < len(questions):
         current_question = questions[current_question_index]
@@ -359,6 +393,7 @@ def questions_by_theme(theme):
         return redirect(url_for('quiz_complete'))
 
     return render_template("by_theme.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, theme=theme)
+
 
 
 @app.route('/quiz_complete')

@@ -28,17 +28,41 @@
             </div>
             <!-- Exibição das perguntas relacionadas ao tema selecionado -->
             {% if questions %}
-            <div class="theme-questions mt-4">
-                <h3>Perguntas sobre {{ theme }}</h3>
-                <ul>
-                    {% for question in questions %}
-                    <li>
-                        <h4>{{ question.question }}</h4>
-                        <!-- Exibir opções de resposta, respostas corretas, etc. -->
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+                {% if current_question %}
+                    <div class="individual-question mt-4">
+                        <h3>Pergunta {{ current_question_index + 1 }}</h3>
+                        <form id="quiz-form" method="POST" action="{{ url_for('questions_by_theme', theme=theme) }}">
+                            <div class="question">
+                                <h4>{{ current_question.question }}</h4>
+                                <div class="options">
+                                    <ul class="list-group mb-3">
+                                        {% for option_key, option_text in current_question.options.items() %}
+                                            <label for="option{{ option_key }}" class="list-group-item">
+                                                <input type="radio" id="option{{ option_key }}" name="question{{ current_question_index }}" value="{{ option_key }}">
+                                                <span>{{ option_text }}</span>
+                                            </label>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="current_question_index" value="{{ current_question_index }}">
+                            <button type="submit" class="btn btn-success" id="submit-button">Próxima</button>
+                        </form>
+                    </div>
+                {% else %}
+                    <div class="theme-questions mt-4">
+                        <h3>Perguntas sobre {{ theme }}</h3>
+                        <ul>
+                            {% for question in questions %}
+                                <li>
+                                    <a href="{{ url_for('questions_by_theme', theme=theme, current_question_index=loop.index0) }}">
+                                        <h4>{{ question.question }}</h4>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
             {% endif %}
         </div>
     </div>

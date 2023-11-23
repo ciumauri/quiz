@@ -18,41 +18,53 @@
             {{ show_links(user) }}
         </div>
         <div class="questions container text-light p-3">
-            <h1>Questões por Dificuldade</h1>
+            <h1>Perguntas por nível de dificuldade</h1>
             <hr class="text-light" />
-            <!-- Select para diferentes níveis de dificuldade -->
-            <div class="difficulty-select mb-3">
-                <label for="difficulty-select" class="form-label">Escolha a dificuldade:</label>
-                <div class="btn-group">
-                    <a href="{{ url_for('questions_by_difficulty', difficulty='0') }}" class="btn btn-primary">Fácil</a>
-                    <a href="{{ url_for('questions_by_difficulty', difficulty='1') }}" class="btn btn-secondary">Médio</a>
-                    <a href="{{ url_for('questions_by_difficulty', difficulty='2') }}"
-                        class="btn btn-danger">Difícil</a>
-                    <!-- Adicione mais níveis de dificuldade, se necessário -->
-                </div>
+            <!-- Botões para selecionar dificuldade -->
+            <div class="difficulty-select">
+                <a href="{{ url_for('questions_by_difficulty', difficulty='0') }}" class="btn btn-primary mt-3">Fácil</a>
+                <a href="{{ url_for('questions_by_difficulty', difficulty='1') }}" class="btn btn-secondary mt-3">Médio</a>
+                <a href="{{ url_for('questions_by_difficulty', difficulty='2') }}"
+                    class="btn btn-danger mt-3">Difícil</a>
+                <!-- Adicione mais botões para outros níveis de dificuldade, se necessário -->
             </div>
-            <!-- Exibição das questões por dificuldade -->
+            <!-- Exibição das questões relacionadas à dificuldade selecionada -->
             {% if questions %}
-            <div class="difficulty-questions mt-4">
-                <h3>Questões de Dificuldade {{ difficulty }}</h3>
-                <ul>
-                    {% for question in questions %}
-                    <li>
-                        <h4>{{ question.question }}</h4>
+                {% if current_question %}
+                    <div class="individual-question mt-4">
+                        <h3>Pergunta {{ current_question_index + 1 }}</h3>
+                        <form id="quiz-form" method="POST" action="{{ url_for('questions_by_difficulty', difficulty=difficulty) }}">
+                            <div class="question">
+                                <h4>{{ current_question.question }}</h4>
+                                <div class="options">
+                                    <ul class="list-group mb-3">
+                                        {% for option_key, option_text in current_question.options.items() %}
+                                            <label for="option{{ option_key }}" class="list-group-item">
+                                                <input type="radio" id="option{{ option_key }}" name="question{{ current_question_index }}" value="{{ option_key }}">
+                                                <span>{{ option_text }}</span>
+                                            </label>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="current_question_index" value="{{ current_question_index }}">
+                            <button type="submit" class="btn btn-success" id="submit-button">Próxima</button>
+                        </form>
+                    </div>
+                {% else %}
+                    <div class="difficulty-questions mt-4">
+                        <h3>Questões de Dificuldade {{ difficulty }}</h3>
                         <ul>
-                            {% for option_key, option_value in question.options.items() %}
-                            <li>
-                                <label>
-                                    <input type="radio" name="question_{{ loop.index }}" value="{{ option_key }}">
-                                    {{ option_value }}
-                                </label>
-                            </li>
+                            {% for question in questions %}
+                                <li>
+                                    <a href="{{ url_for('quiz_by_question', question_id=question.id) }}">
+                                        <h4>{{ question.question }}</h4>
+                                    </a>
+                                </li>
                             {% endfor %}
                         </ul>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+                    </div>
+                {% endif %}
             {% endif %}
         </div>
     </div>
