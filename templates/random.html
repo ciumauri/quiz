@@ -23,8 +23,8 @@
             <h4 class="text-danger">{{ error }}</h4>
             {% endif %}
             <hr class="text-light" />
-            <h3>Pergunta {{ current_question_index + 1 }}</h3>
-            <form id="quiz-form" method="POST" action="{{ url_for('random_questions', count=5) }}">
+            <h3>Pergunta {{ current_question_index + 1 }} de {{ total_questions }}</h3>
+            <form id="quiz-form" method="POST" action="{{ url_for('random_questions', count=10) }}">
                 <div class="question">
                     <h4>{{ current_question.question }}</h4>
                     <div class="options">

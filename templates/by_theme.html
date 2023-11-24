@@ -30,7 +30,7 @@
             {% if questions %}
                 {% if current_question %}
                     <div class="individual-question mt-4">
-                        <h3>Pergunta {{ current_question_index + 1 }}</h3>
+                        <h3>Pergunta {{ current_question_index + 1 }} de {{ total_questions }}</h3>
                         <form id="quiz-form" method="POST" action="{{ url_for('questions_by_theme', theme=theme) }}">
                             <div class="question">
                                 <h4>{{ current_question.question }}</h4>

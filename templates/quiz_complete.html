@@ -18,10 +18,9 @@
             {{ show_links(user) }}
         </div>
         <div class="container text-light p-3">
-            <h1>Quiz Result</h1>
+            <h1>Resultado do Quiz</h1>
             <hr class="text-light" />
 
-            <h2>Resultado do Quiz</h2>
             <p>Você acertou {{ correct_answers }} de {{ total_questions }} perguntas!</p>
 
             {% if percentage_correct >= 70 %}
@@ -32,7 +31,7 @@
             <p>Infelizmente, sua pontuação foi abaixo de 50%. Tente novamente!</p>
             {% endif %}
 
-            <h2>Perguntas Respondidas Incorretamente</h2>
+            <h2>Respostas Incorretas</h2>
             {% if wrong_questions %}
             <ul>
                 {% for question in wrong_questions %}

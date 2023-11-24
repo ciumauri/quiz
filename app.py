@@ -5,6 +5,7 @@ import random
 import os
 from database import getDatabase
 from werkzeug.security import generate_password_hash, check_password_hash
+import logging
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)
@@ -12,6 +13,8 @@ app.config['SECRET_KEY'] = os.urandom(24)
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
+# Adicionando configurações para o logger
+logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_PERMANENT"] = False
@@ -133,7 +136,6 @@ def login():
             return redirect(url_for('login'))
 
     return render_template("login.html", user = user, error = error)
-    
 
 # Register
 @app.route('/register', methods=["POST", "GET"])
@@ -285,14 +287,22 @@ def quiz():
     data_manager = DataManager("quiz.json")
     questions = data_manager.select_questions('all')
 
-    # Armazena as perguntas na sessão
-    session['questions'] = questions
+    # Armazena as perguntas na sessão se ainda não estiverem armazenadas
+    if 'questions' not in session:
+        session['questions'] = questions
 
     current_question_index = int(request.form.get('current_question_index', 0))
 
+    if 'total_questions' not in session:
+        session['total_questions'] = len(questions)
+
     if request.method == "POST":
         user_answer = request.form.get(f'question{current_question_index}')
-        return process_question_response(user_answer, questions, current_question_index, 'quiz')
+        response = process_question_response(user_answer, questions, current_question_index, 'all')
+        if response is not None:
+            return response
+        else:
+            current_question_index += 1  # Avança para a próxima pergunta
 
     if 0 <= current_question_index < len(questions):
         current_question = questions[current_question_index]
@@ -300,40 +310,12 @@ def quiz():
     else:
         return redirect(url_for('quiz_complete'))
 
-    return render_template("quiz.html", user=user, current_question=current_question, current_question_index=current_question_index, error=error)
-
-
-@app.route('/questions/random/<int:count>', methods=["GET", "POST"])
-def random_questions(count):
-    user = get_current_user()
-
-    if user is None:
-        return redirect(url_for('login'))
-
-    data_manager = DataManager("quiz.json")
-    questions = data_manager.select_questions('random', count=count)
-
-    # Armazena as perguntas na sessão
-    session['questions'] = questions
-
-    current_question_index = int(request.form.get('current_question_index', 0))
-
-    if request.method == "POST":
-        user_answer = request.form.get(f'question{current_question_index}')
-        return process_question_response(user_answer, questions, current_question_index, 'random', count=count)
-
-    if 0 <= current_question_index < len(questions):
-        current_question = questions[current_question_index]
-        current_question['correct_answer'] = questions[current_question_index]['ca']
-    else:
-        # Redireciona para a página de resultados (quiz_complete) após a última pergunta
-        return redirect(url_for('quiz_complete'))
-
-    return render_template("random.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions)
+    return render_template("quiz.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), error=error)
 
 @app.route('/questions/difficulty/<int:difficulty>', methods=['GET', 'POST'])
 def questions_by_difficulty(difficulty):
     user = get_current_user()
+    error = None
 
     if user is None:
         return redirect(url_for('login'))
@@ -346,6 +328,9 @@ def questions_by_difficulty(difficulty):
         session['questions'] = questions
 
     current_question_index = int(request.form.get('current_question_index', 0))
+
+    if 'total_questions' not in session:
+        session['total_questions'] = len(questions)
 
     if request.method == "POST":
         user_answer = request.form.get(f'question{current_question_index}')
@@ -362,13 +347,12 @@ def questions_by_difficulty(difficulty):
         # Redireciona para a página de resultados (quiz_complete) após a última pergunta
         return redirect(url_for('quiz_complete'))
 
-    return render_template("by_difficulty.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, difficulty=difficulty)
-
-
+    return render_template("by_difficulty.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), difficulty=difficulty, error=error)
 
 @app.route('/questions/theme/<theme>', methods=['GET', 'POST'])
 def questions_by_theme(theme):
     user = get_current_user()
+    error = None
 
     if user is None:
         return redirect(url_for('login'))
@@ -376,14 +360,59 @@ def questions_by_theme(theme):
     data_manager = DataManager("quiz.json")
     questions = data_manager.select_questions('theme', theme=theme)
 
-    # Armazena as perguntas na sessão
-    session['questions'] = questions
+    # Armazena as perguntas na sessão se ainda não estiverem armazenadas
+    if 'questions' not in session:
+        session['questions'] = questions
 
     current_question_index = int(request.form.get('current_question_index', 0))
 
+    if 'total_questions' not in session:
+        session['total_questions'] = len(questions)
+
     if request.method == "POST":
         user_answer = request.form.get(f'question{current_question_index}')
-        return process_question_response(user_answer, questions, current_question_index, 'questions_by_theme', theme=theme)
+        response = process_question_response(user_answer, questions, current_question_index, 'theme', theme=theme)
+        if response is not None:
+            return response
+        else:
+            current_question_index += 1  # Avança para a próxima pergunta    
+    
+    if 0 <= current_question_index < len(questions):
+        current_question = questions[current_question_index]
+        current_question['correct_answer'] = questions[current_question_index]['ca']
+    else:
+        # Redireciona para a página de resultados (quiz_complete) após a última pergunta
+        return redirect(url_for('quiz_complete'))
+
+    return render_template("by_theme.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), theme=theme, error=error)
+
+@app.route('/questions/random/<int:count>', methods=["GET", "POST"])
+def random_questions(count):
+    user = get_current_user()
+    error = None
+
+    if user is None:
+        return redirect(url_for('login'))
+
+    data_manager = DataManager("quiz.json")
+    questions = data_manager.select_questions('random', count=count)
+
+    # Armazena as perguntas na sessão se ainda não estiverem armazenadas
+    if 'questions' not in session:
+        session['questions'] = questions
+
+    current_question_index = int(request.form.get('current_question_index', 0))
+
+    if 'total_questions' not in session:
+        session['total_questions'] = len(questions)
+
+    if request.method == "POST":
+        user_answer = request.form.get(f'question{current_question_index}')
+        response = process_question_response(user_answer, questions, current_question_index, 'random', count=count)
+        if response is not None:
+            return response
+        else:
+            current_question_index += 1  # Avança para a próxima pergunta 
 
     if 0 <= current_question_index < len(questions):
         current_question = questions[current_question_index]
@@ -392,17 +421,20 @@ def questions_by_theme(theme):
         # Redireciona para a página de resultados (quiz_complete) após a última pergunta
         return redirect(url_for('quiz_complete'))
 
-    return render_template("by_theme.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, theme=theme)
-
-
+    # Adicione um retorno válido no final da função
+    return render_template("random.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), error=error)
 
 @app.route('/quiz_complete')
 def quiz_complete():
     user = get_current_user()
     correct_answers = session.get('correct_answers', 0)  # Obtém o número de respostas corretas da sessão
 
+    logging.debug(f"Current user: {user}")  # Log para verificar o usuário atual
+    logging.debug(f"Correct answers: {correct_answers}")  # Log para número de respostas corretas
+
     # Verifica se 'questions' está na sessão
     if 'questions' not in session:
+        logging.debug("Redirecting to index.")  # Log para redirecionamento
         # Redireciona para a página inicial caso 'questions' não esteja na sessão
         return redirect(url_for('index'))
 

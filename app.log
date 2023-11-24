@@ -1,0 +1,872 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:52:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:52:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:52:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:52:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:52:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:23] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: c
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:31] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: a
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:36] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 11:53:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:05] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:07] "[35m[1mPOST /questions/random/5 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:08] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:08] "GET /questions/random/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:02:08] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:34] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: a
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:38] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:40] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: c
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:41] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: d
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:44] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: c
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:45] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: c
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:46] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:48] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:49] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:51] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: c
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:53] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: a
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:54] "[32mPOST /quiz HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ad838370>
+DEBUG:root:Correct answers: 5
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:54] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:07:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:03] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:06] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:09] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:11] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:13] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7fd1e0>
+DEBUG:root:Correct answers: 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:13] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:19] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:22] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:24] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:29] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: a
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:31] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:34] "GET /quiz HTTP/1.1" 200 -
+DEBUG:root:User answer: a
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:36] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:40] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:42] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:44] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:46] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:47] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ad899330>
+DEBUG:root:Correct answers: 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:47] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:54] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:56] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:58] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:59] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:08:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:00] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ad83a410>
+DEBUG:root:Correct answers: 0
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:00] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:06] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:09] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:12] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:16] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:19] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac72ae90>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:19] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:30] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:33] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:09:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:55] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:58] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:11:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:01] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:03] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:06] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7da6e0>
+DEBUG:root:Correct answers: 2
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:06] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:16] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:19] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:21] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:23] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:25] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7d9e10>
+DEBUG:root:Correct answers: 2
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:25] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:30] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:32] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:35] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:36] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:39] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7fc310>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:39] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:46] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:50] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:12:52] "GET /quiz HTTP/1.1" 200 -
+DEBUG:root:User answer: b
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:04] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:User answer: None
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:05] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:13:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:24] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:27] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:32] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:35] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:37] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7ffb80>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:37] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:43] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:45] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:47] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:49] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:50] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7d9450>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:50] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:55] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:56] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:57] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:59] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:14:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:00] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:01] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:03] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:07] "POST /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:09] "POST /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:10] "POST /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:12] "[32mPOST /questions/difficulty/2 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7d8b20>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:12] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:17] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:19] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:20] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:23] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:25] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:27] "POST /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:28] "[32mPOST /questions/difficulty/0 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7fda50>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:28] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:33] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:34] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:36] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:38] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:40] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7fce80>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:40] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:15:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:14] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:16] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:17] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:20] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:26] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:28] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7fe8ac7db3a0>
+DEBUG:root:Correct answers: 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:28] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:35] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:51] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:33:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:39] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:46] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:49] "[35m[1mPOST /questions/theme/literatura HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:50] "[36mGET /questions/theme/literatura?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:50] "GET /questions/theme/literatura?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:50] "[36mGET /questions/theme/literatura?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:41:50] "[36mGET /questions/theme/literatura?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:15] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:23] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:28] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:30] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:32] "[32mPOST /questions/theme/literatura HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f2187152110>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:32] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 12:48:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:43] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:48] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:53] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:56] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:58] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:16:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:17:02] "[32mPOST /questions/theme/literatura HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f2186040fa0>
+DEBUG:root:Correct answers: 5
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:17:02] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:17:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:17:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:17:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:16] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:19] "GET /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:22] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:25] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:27] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:30] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:33] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:35] "[32mPOST /questions/theme/geografia HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f2187151480>
+DEBUG:root:Correct answers: 6
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:35] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:19:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:12] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:14] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:15] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:16] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:18] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:19] "[32mPOST /questions/theme/literatura HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f77f5652410>
+DEBUG:root:Correct answers: 2
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:19] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:23] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:24] "GET /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:26] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:28] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:29] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:30] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:31] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:32] "[32mPOST /questions/theme/geografia HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f77f56b9270>
+DEBUG:root:Correct answers: 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:32] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:24:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f77f67c91b0>
+DEBUG:root:Correct answers: 0
+DEBUG:root:Redirecting to index.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:20] "[32mGET /quiz_complete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:31] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:32] "GET /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:35] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:37] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:39] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:40] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:42] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:44] "[32mPOST /questions/theme/geografia HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f77f56b97e0>
+DEBUG:root:Correct answers: 5
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:44] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:25:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:16] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:17] "GET /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:20] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:22] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:23] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:24] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:26] "POST /questions/theme/geografia HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:29] "[32mPOST /questions/theme/geografia HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f77f56b86a0>
+DEBUG:root:Correct answers: 0
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:29] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:52] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:55] "[35m[1mPOST /questions/random/5 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:55] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:55] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:40:55] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:55] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:58] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:47:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:01] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:03] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:05] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:06] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:08] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:10] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:12] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:14] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:15] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:17] "[32mPOST /quiz HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f62698d3340>
+DEBUG:root:Correct answers: 6
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:17] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:52] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:55] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:48:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:50:55] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:50:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:50:57] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:50:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:02] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:03] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:05] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:07] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:09] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:10] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:12] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:14] "[32mPOST /quiz HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f6268890640>
+DEBUG:root:Correct answers: 10
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:14] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:20] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:23] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:25] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:27] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:29] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:30] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:32] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:34] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:41] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:42] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:44] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:46] "[32mPOST /quiz HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f62687cdd50>
+DEBUG:root:Correct answers: 10
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:46] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:51:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f62687cdab0>
+DEBUG:root:Correct answers: 0
+DEBUG:root:Redirecting to index.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:29] "[32mGET /quiz_complete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:33] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:35] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:36] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:38] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:40] "POST /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:42] "[32mPOST /questions/theme/literatura HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f626887c130>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:42] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 13:52:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:18] "GET /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:22] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:24] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:25] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:27] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:29] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:31] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:32] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:34] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:36] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:37] "POST /quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:39] "[32mPOST /quiz HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f62698d2ad0>
+DEBUG:root:Correct answers: 11
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:39] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:24:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:19] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:21] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:24] "[35m[1mPOST /questions/difficulty/2 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:24] "GET /questions/difficulty/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:24] "GET /questions/difficulty/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:24] "GET /questions/difficulty/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:24] "[36mGET /questions/difficulty/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:31] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:33] "[35m[1mPOST /questions/difficulty/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:33] "GET /questions/difficulty/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:33] "[36mGET /questions/difficulty/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:33] "[36mGET /questions/difficulty/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:25:33] "[36mGET /questions/difficulty/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:56] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:58] "GET /questions/difficulty/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:59] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:30:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:02] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:05] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:06] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f0c8ef6e860>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:06] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:15] "GET /questions/theme/literatura HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:21] "GET /questions/difficulty/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:22] "GET /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:25] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:28] "POST /questions/difficulty/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:30] "[32mPOST /questions/difficulty/1 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f0c8ef1b490>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:30] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:39] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:41] "[35m[1mPOST /questions/random/5 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:41] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:41] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:31:41] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:00] "[35m[1mPOST /questions/random/5 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:00] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:00] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:00] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:00] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:15] "[35m[1mPOST /questions/random/5 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:15] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:15] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:40:15] "[36mGET /questions/random/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug: * Detected change in '/home/ciumauri/work/ifpr/quiz/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 122-222-860
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:10] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:13] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:17] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:48:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:49:52] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:49:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:49:57] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:49:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:00] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:04] "[32mPOST /questions/random/5 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea2849ff0>
+DEBUG:root:Correct answers: 2
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:04] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:11] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:14] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:16] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:18] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:21] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:23] "[32mPOST /questions/random/5 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea3982380>
+DEBUG:root:Correct answers: 0
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:23] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:29] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:31] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:33] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:36] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:38] "POST /questions/random/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:39] "[32mPOST /questions/random/5 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea3912620>
+DEBUG:root:Correct answers: 3
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:39] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea3982dd0>
+DEBUG:root:Correct answers: 0
+DEBUG:root:Redirecting to index.
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:56] "[32mGET /quiz_complete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:59] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 14:50:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:39] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:41] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:43] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:45] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:47] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:50] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:52] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:54] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:56] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:58] "[32mPOST /questions/random/10 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea284a890>
+DEBUG:root:Correct answers: 2
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:58] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:03:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:08] "GET /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:10] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:11] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:12] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:13] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:14] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:16] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:17] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:19] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:20] "POST /questions/random/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:21] "[32mPOST /questions/random/10 HTTP/1.1[0m" 302 -
+DEBUG:root:Current user: <sqlite3.Row object at 0x7f7ea28151b0>
+DEBUG:root:Correct answers: 4
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:21] "GET /quiz_complete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 15:04:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
