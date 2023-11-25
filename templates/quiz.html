@@ -31,7 +31,7 @@
                         <ul class="list-group mb-3">
                             {% for option_key, option_text in current_question.options.items() %}
                             <label for="option{{ option_key }}" class="list-group-item">
-                                <input type="radio" id="option{{ option_key }}" name="question{{ current_question_index }}" value="{{ option_key }}">
+                                <input required type="radio" id="option{{ option_key }}" name="question{{ current_question_index }}" value="{{ option_key }}">
                                 <span>{{ option_text }}</span>
                             </label>
                             {% endfor %}
