@@ -225,14 +225,7 @@ def process_question_response(user_answer, questions, current_question_index, re
             print(f"Resposta correta: {correct_question['options'][correct_question['ca']]}")
             print("------------------")
 
-        if request.method == "POST":
-            user_answer = request.form.get(f'question{current_question_index}')
-            response = process_question_response(user_answer, questions, current_question_index, 'random', count=count)
-            if response is not None:
-                return response
-            else:
-                current_question_index += 1  # Avança para a próxima pergunta 
-                
+        current_question_index += 1
     else:
         error = "Por favor, selecione uma opção antes de avançar para a próxima pergunta."
         current_question = questions[current_question_index]
