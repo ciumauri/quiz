@@ -196,24 +196,43 @@ def logout():
     return redirect(url_for('index'))
 
 def process_question_response(user_answer, questions, current_question_index, redirect_route, theme=None, count=None, difficulty=None):
-    if user_answer is not None and user_answer == "":
+    if 'wrong_questions' not in session:
+        session['wrong_questions'] = []  # Inicializa a lista de perguntas erradas na sessão
+
+    if user_answer is not None:
         correct_answer = questions[current_question_index]['ca']
+        current_question = questions[current_question_index]
 
         if user_answer == correct_answer:
             session['correct_answers'] = session.get('correct_answers', 0) + 1
         else:
-            wrong_questions = session.get('wrong_questions', [])
             wrong_question_data = {
-                'question': questions[current_question_index]['question'],
+                'id': current_question['id'],  # Adiciona o ID da pergunta respondida incorretamente
+                'question': current_question['question'],
                 'user_answer_key': user_answer,
-                'user_answer_value': questions[current_question_index]['options'][user_answer],
+                'user_answer_value': current_question['options'][user_answer],
                 'correct_answer_key': correct_answer,
-                'correct_answer_value': questions[current_question_index]['options'][correct_answer],
+                'correct_answer_value': current_question['options'][correct_answer],
             }
-            wrong_questions.append(wrong_question_data)
-            session['wrong_questions'] = wrong_questions
+            session['wrong_questions'].append(wrong_question_data)  # Armazena a pergunta errada na sessão
 
-        current_question_index += 1
+           # No bloco que encontra a pergunta correta correspondente à resposta errada
+            correct_question = questions[current_question_index]
+
+            # Imprime a pergunta respondida incorretamente e a resposta correta
+            print(f"Pergunta: {wrong_question_data['question']}")
+            print(f"Resposta do usuário: {wrong_question_data['user_answer_value']}")
+            print(f"Resposta correta: {correct_question['options'][correct_question['ca']]}")
+            print("------------------")
+
+        if request.method == "POST":
+            user_answer = request.form.get(f'question{current_question_index}')
+            response = process_question_response(user_answer, questions, current_question_index, 'random', count=count)
+            if response is not None:
+                return response
+            else:
+                current_question_index += 1  # Avança para a próxima pergunta 
+                
     else:
         error = "Por favor, selecione uma opção antes de avançar para a próxima pergunta."
         current_question = questions[current_question_index]
@@ -229,6 +248,8 @@ def process_question_response(user_answer, questions, current_question_index, re
 
     if current_question_index >= len(questions):
         if redirect_route in ['quiz', 'random_questions']:
+            wrong_questions = session.get('wrong_questions', [])
+            session['wrong_questions'] = wrong_questions  # Salva as perguntas erradas na sessão global
             return redirect(url_for('quiz_complete'))
         elif redirect_route == 'questions_by_theme':
             theme_questions = session.get('theme_questions', [])
@@ -400,26 +421,28 @@ def random_questions(count):
 @app.route('/quiz_complete')
 def quiz_complete():
     user = get_current_user()
-    correct_answers = session.get('correct_answers', 0)  # Obtém o número de respostas corretas da sessão
+    correct_answers = session.get('correct_answers', 0)
 
-    # Verifica se 'questions' está na sessão
     if 'questions' not in session:
-        # Redireciona para a página inicial caso 'questions' não esteja na sessão
         return redirect(url_for('index'))
 
-    total_questions = len(session['questions'])  # Obtém o total de perguntas feitas
+    total_questions = len(session['questions'])
 
-    # Calcula a porcentagem de respostas corretas
     percentage_correct = (correct_answers / total_questions) * 100 if total_questions > 0 else 0
 
-    # Limpa o número de respostas corretas da sessão após exibi-lo
-    session.pop('correct_answers', None)
-    session.pop('questions', None)  # Limpa as perguntas da sessão
-
     wrong_questions = session.get('wrong_questions', [])
-    session.pop('wrong_questions', None)  # Limpa a lista de perguntas erradas da sessão
+    for question in wrong_questions:
+        print(f"Pergunta: {question['question']}")
+        print(f"Resposta do usuário: {question['user_answer_value']}")
+        print(f"Resposta correta: {question['correct_answer_value']}")
+        print("------------------")
+
+    session.pop('correct_answers', None)
+    session.pop('questions', None)
+    session.pop('wrong_questions', None)
 
     return render_template("quiz_complete.html", user=user, correct_answers=correct_answers, total_questions=total_questions, percentage_correct=percentage_correct, wrong_questions=wrong_questions)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

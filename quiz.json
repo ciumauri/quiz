@@ -1,6 +1,7 @@
 {
     "questions": [
         {
+            "id": 1,
             "theme": "geografia",
             "difficulty": 0,
             "question": "Qual é a capital da França?",
@@ -13,6 +14,7 @@
             "ca": "c"
         },
         {
+            "id": 2,
             "theme": "literatura",
             "difficulty": 1,
             "question": "Quem escreveu a peça 'Romeu e Julieta'?",
@@ -25,6 +27,7 @@
             "ca": "a"
         },
         {
+            "id": 3,
             "theme": "literatura",
             "difficulty": 0,
             "question": "Quem é o autor de 'Dom Quixote'?",
@@ -37,6 +40,7 @@
             "ca": "d"
         },
         {
+            "id": 4,
             "theme": "literatura",
             "difficulty": 2,
             "question": "Qual romance de Jane Austen apresenta a protagonista Elizabeth Bennet?",
@@ -49,6 +53,7 @@
             "ca": "d"
         },
         {
+            "id": 5,
             "theme": "geografia",
             "difficulty": 0,
             "question": "Qual é a capital do Brasil?",
@@ -61,18 +66,7 @@
             "ca": "c"
         },
         {
-            "theme": "literatura",
-            "difficulty": 1,
-            "question": "Quem é o autor de 'Matar um Rouxinol'?",
-            "options": {
-                "a": "Harper Lee",
-                "b": "John Steinbeck",
-                "c": "Mark Twain",
-                "d": "Mauricio Oliveira"
-            },
-            "ca": "a"
-        },
-        {
+            "id": 6,
             "theme": "geografia",
             "difficulty": 2,
             "question": "Qual é o país mais populoso do mundo?",
@@ -85,6 +79,7 @@
             "ca": "c"
         },
         {
+            "id": 7,
             "theme": "literatura",
             "difficulty": 0,
             "question": "Qual é o título do livro de George Orwell que descreve um estado totalitário?",
@@ -97,6 +92,7 @@
             "ca": "a"
         },
         {
+            "id": 8,
             "theme": "geografia",
             "difficulty": 2,
             "question": "Qual é a capital da Bolívia?",
@@ -109,6 +105,7 @@
             "ca": "b"
         },
         {
+            "id": 9,
             "theme": "geografia",
             "difficulty": 1,
             "question": "Qual é o maior oceano do mundo?",
@@ -121,6 +118,7 @@
             "ca": "c"
         },
         {
+            "id": 10,
             "theme": "geografia",
             "difficulty": 2,
             "question": "Qual é o rio mais longo do mundo?",
@@ -129,6 +127,19 @@
                 "b": "Amazonas",
                 "c": "Mississipi",
                 "d": "Yangtzé"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 11,
+            "theme": "literatura",
+            "difficulty": 1,
+            "question": "Quem é o autor de 'Matar um Rouxinol'?",
+            "options": {
+                "a": "Harper Lee",
+                "b": "John Steinbeck",
+                "c": "Mark Twain",
+                "d": "Mauricio Oliveira"
             },
             "ca": "a"
         }
