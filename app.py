@@ -18,6 +18,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Strategy para seleção de perguntas
+# **criteria = Aceita argumentos nomeados, exemplo(nome='João', idade=25, cidade='São Paulo')
 class QuestionSelectionStrategy:
     def select_questions(self, questions, **criteria):
         return questions
@@ -76,7 +77,7 @@ class DataManager:
 
     def __init__(self, filename):
         self.questions = []
-        with open(filename, "r") as f:
+        with open("quiz.json", "r", encoding="utf-8") as f:
             data = json.load(f)
             self.questions = data['questions']
 
@@ -195,6 +196,7 @@ def logout():
     session.pop('user', None)
     return redirect(url_for('index'))
 
+# Função para processar a resposta da pergunta
 def process_question_response(user_answer, questions, current_question_index, redirect_route, theme=None, count=None, difficulty=None):
     if 'wrong_questions' not in session:
         session['wrong_questions'] = []  # Inicializa a lista de perguntas erradas na sessão
@@ -206,6 +208,7 @@ def process_question_response(user_answer, questions, current_question_index, re
         if user_answer == correct_answer:
             session['correct_answers'] = session.get('correct_answers', 0) + 1
         else:
+            # Adicione o ID da pergunta respondida incorretamente à lista de perguntas erradas na sessão
             wrong_question_data = {
                 'id': current_question['id'],  # Adiciona o ID da pergunta respondida incorretamente
                 'question': current_question['question'],
@@ -215,6 +218,7 @@ def process_question_response(user_answer, questions, current_question_index, re
                 'correct_answer_value': current_question['options'][correct_answer],
             }
             session['wrong_questions'].append(wrong_question_data)  # Armazena a pergunta errada na sessão
+
 
            # No bloco que encontra a pergunta correta correspondente à resposta errada
             correct_question = questions[current_question_index]
@@ -266,7 +270,7 @@ def process_question_response(user_answer, questions, current_question_index, re
     elif redirect_route == 'questions_by_difficulty':
         return render_template("by_difficulty.html", current_question=current_question, current_question_index=current_question_index, questions=questions, difficulty=difficulty)
 
-
+# Rota para o quiz
 @app.route('/quiz', methods=["GET", "POST"])
 def quiz():
     user = get_current_user()
@@ -302,6 +306,7 @@ def quiz():
 
     return render_template("quiz.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions))
 
+# Rota para perguntas por dificuldade
 @app.route('/questions/difficulty/<int:difficulty>', methods=['GET', 'POST'])
 def questions_by_difficulty(difficulty):
     user = get_current_user()
@@ -338,6 +343,7 @@ def questions_by_difficulty(difficulty):
 
     return render_template("by_difficulty.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), difficulty=difficulty)
 
+# Rota para perguntas por tema
 @app.route('/questions/theme/<theme>', methods=['GET', 'POST'])
 def questions_by_theme(theme):
     user = get_current_user()
@@ -374,6 +380,7 @@ def questions_by_theme(theme):
 
     return render_template("by_theme.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions), theme=theme)
 
+# Rota para perguntas aleatórias
 @app.route('/questions/random/<int:count>', methods=["GET", "POST"])
 def random_questions(count):
     user = get_current_user()
@@ -411,6 +418,7 @@ def random_questions(count):
     # Adicione um retorno válido no final da função
     return render_template("random.html", user=user, current_question=current_question, current_question_index=current_question_index, questions=questions, total_questions=len(questions))
 
+# Rota para completar o quiz
 @app.route('/quiz_complete')
 def quiz_complete():
     user = get_current_user()
