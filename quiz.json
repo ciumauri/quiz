@@ -142,6 +142,396 @@
                 "d": "Mauricio Oliveira"
             },
             "ca": "a"
+        },
+        {
+            "id": 12,
+            "theme": "ciência",
+            "difficulty": 1,
+            "question": "Qual é o elemento mais abundante na crosta terrestre?",
+            "options": {
+                "a": "Ferro",
+                "b": "Oxigênio",
+                "c": "Silício",
+                "d": "Alumínio"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 13,
+            "theme": "ciência",
+            "difficulty": 0,
+            "question": "Qual é a unidade básica da estrutura de DNA?",
+            "options": {
+                "a": "Átomo",
+                "b": "Nucleotídeo",
+                "c": "Gene",
+                "d": "Cromossomo"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 14,
+            "theme": "ciência",
+            "difficulty": 2,
+            "question": "Quem formulou a teoria da relatividade?",
+            "options": {
+                "a": "Isaac Newton",
+                "b": "Albert Einstein",
+                "c": "Galileu Galilei",
+                "d": "Stephen Hawking"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 15,
+            "theme": "história",
+            "difficulty": 1,
+            "question": "Quem foi o líder da Revolução Cubana?",
+            "options": {
+                "a": "Fidel Castro",
+                "b": "Che Guevara",
+                "c": "Raul Castro",
+                "d": "Hugo Chávez"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 16,
+            "theme": "história",
+            "difficulty": 0,
+            "question": "Qual foi o primeiro país a usar armas nucleares em guerra?",
+            "options": {
+                "a": "Estados Unidos",
+                "b": "Rússia",
+                "c": "Japão",
+                "d": "Alemanha"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 17,
+            "theme": "história",
+            "difficulty": 2,
+            "question": "Quem foi o líder da Revolução Francesa?",
+            "options": {
+                "a": "Napoleão Bonaparte",
+                "b": "Robespierre",
+                "c": "Luís XVI",
+                "d": "Marianne"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 18,
+            "theme": "matemática",
+            "difficulty": 1,
+            "question": "Qual é o número Pi?",
+            "options": {
+                "a": "1.142",
+                "b": "0.1415",
+                "c": "2.14159",
+                "d": "3.1415"
+            },
+            "ca": "d"
+        },
+        {
+            "id": 19,
+            "theme": "matemática",
+            "difficulty": 0,
+            "question": "Quem é conhecido como 'Pai da Geometria'?",
+            "options": {
+                "a": "Isaac Newton",
+                "b": "Euclides",
+                "c": "René Descartes",
+                "d": "Arquimedes"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 20,
+            "theme": "matemática",
+            "difficulty": 2,
+            "question": "O que é o Teorema de Pitágoras?",
+            "options": {
+                "a": "a² + b² = c²",
+                "b": "πr²",
+                "c": "E = mc²",
+                "d": "a × b × sen θ"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 21,
+            "theme": "tecnologia",
+            "difficulty": 1,
+            "question": "Quem inventou a lâmpada elétrica?",
+            "options": {
+                "a": "Nikola Tesla",
+                "b": "Isaac Newton",
+                "c": "Thomas Edison",
+                "d": "Alexander Graham Bell"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 22,
+            "theme": "tecnologia",
+            "difficulty": 0,
+            "question": "Qual foi o primeiro computador eletrônico digital?",
+            "options": {
+                "a": "ENIAC",
+                "b": "IBM 701",
+                "c": "UNIVAC I",
+                "d": "Atanasoff-Berry Computer"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 23,
+            "theme": "tecnologia",
+            "difficulty": 2,
+            "question": "Quem criou o sistema operacional Linux?",
+            "options": {
+                "a": "Bill Gates",
+                "b": "Linus Torvalds",
+                "c": "Steve Jobs",
+                "d": "Mark Zuckerberg"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 24,
+            "theme": "arte",
+            "difficulty": 1,
+            "question": "Quem pintou a 'Mona Lisa'?",
+            "options": {
+                "a": "Vincent van Gogh",
+                "b": "Leonardo da Vinci",
+                "c": "Pablo Picasso",
+                "d": "Michelangelo"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 25,
+            "theme": "arte",
+            "difficulty": 0,
+            "question": "Quem é conhecido como o 'pai' da escultura renascentista?",
+            "options": {
+                "a": "Donatello",
+                "b": "Rafael",
+                "c": "Michelangelo",
+                "d": "Leonardo da Vinci"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 26,
+            "theme": "arte",
+            "difficulty": 2,
+            "question": "Qual é a obra mais famosa de Claude Monet?",
+            "options": {
+                "a": "Noite Estrelada",
+                "b": "Os Girassóis",
+                "c": "Lírios d'água",
+                "d": "Impressão, nascer do sol"
+            },
+            "ca": "d"
+        },
+        {
+            "id": 27,
+            "theme": "ciência",
+            "difficulty": 1,
+            "question": "Qual é o maior órgão do corpo humano?",
+            "options": {
+                "a": "Coração",
+                "b": "Fígado",
+                "c": "Pele",
+                "d": "Pulmões"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 28,
+            "theme": "ciência",
+            "difficulty": 0,
+            "question": "Qual é o símbolo químico para o ouro?",
+            "options": {
+                "a": "Au",
+                "b": "Ag",
+                "c": "Fe",
+                "d": "Pt"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 29,
+            "theme": "ciência",
+            "difficulty": 2,
+            "question": "Qual é a velocidade da luz no vácuo?",
+            "options": {
+                "a": "300.000 km/s",
+                "b": "150.000 km/s",
+                "c": "180.000 km/s",
+                "d": "250.000 km/s"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 30,
+            "theme": "história",
+            "difficulty": 1,
+            "question": "Quem foi o primeiro presidente dos Estados Unidos?",
+            "options": {
+                "a": "John Adams",
+                "b": "Thomas Jefferson",
+                "c": "George Washington",
+                "d": "Alexander Hamilton"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 31,
+            "theme": "história",
+            "difficulty": 0,
+            "question": "Em que ano começou a Segunda Guerra Mundial?",
+            "options": {
+                "a": "1939",
+                "b": "1941",
+                "c": "1945",
+                "d": "1933"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 32,
+            "theme": "história",
+            "difficulty": 2,
+            "question": "Quem foi o líder da Revolução Russa de 1917?",
+            "options": {
+                "a": "Vladimir Lenin",
+                "b": "Joseph Stalin",
+                "c": "Leon Trotsky",
+                "d": "Mikhail Gorbachev"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 33,
+            "theme": "matemática",
+            "difficulty": 1,
+            "question": "Qual é a fórmula para calcular a área de um círculo?",
+            "options": {
+                "a": "πr²",
+                "b": "2πr",
+                "c": "2r",
+                "d": "π/2r"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 34,
+            "theme": "matemática",
+            "difficulty": 0,
+            "question": "Qual é o número de Euler aproximado?",
+            "options": {
+                "a": "2.718",
+                "b": "3.142",
+                "c": "1.618",
+                "d": "1.732"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 35,
+            "theme": "matemática",
+            "difficulty": 2,
+            "question": "O que é o teorema de Tales?",
+            "options": {
+                "a": "a² + b² = c²",
+                "b": "Semelhança de triângulos",
+                "c": "Lei dos cossenos",
+                "d": "Lei dos senos"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 36,
+            "theme": "tecnologia",
+            "difficulty": 1,
+            "question": "Quem inventou o telefone?",
+            "options": {
+                "a": "Thomas Edison",
+                "b": "Nikola Tesla",
+                "c": "Alexander Graham Bell",
+                "d": "Guglielmo Marconi"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 37,
+            "theme": "tecnologia",
+            "difficulty": 0,
+            "question": "Qual é a linguagem de programação mais usada no mundo?",
+            "options": {
+                "a": "Python",
+                "b": "Java",
+                "c": "C++",
+                "d": "JavaScript"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 38,
+            "theme": "tecnologia",
+            "difficulty": 2,
+            "question": "Quem é considerado o pai da informática?",
+            "options": {
+                "a": "Alan Turing",
+                "b": "Tim Berners-Lee",
+                "c": "Steve Jobs",
+                "d": "Bill Gates"
+            },
+            "ca": "a"
+        },
+        {
+            "id": 39,
+            "theme": "arte",
+            "difficulty": 1,
+            "question": "Quem pintou 'A Última Ceia'?",
+            "options": {
+                "a": "Michelangelo",
+                "b": "Leonardo da Vinci",
+                "c": "Rafael",
+                "d": "Vincent van Gogh"
+            },
+            "ca": "b"
+        },
+        {
+            "id": 40,
+            "theme": "arte",
+            "difficulty": 0,
+            "question": "Quem é conhecido por suas esculturas em mármore 'David' e 'Pietà'?",
+            "options": {
+                "a": "Rafael",
+                "b": "Donatello",
+                "c": "Michelangelo",
+                "d": "Leonardo da Vinci"
+            },
+            "ca": "c"
+        },
+        {
+            "id": 41,
+            "theme": "arte",
+            "difficulty": 2,
+            "question": "Qual é a pintura mais famosa de Salvador Dalí?",
+            "options": {
+                "a": "Persistência da Memória",
+                "b": "O Grito",
+                "c": "Noite Estrelada",
+                "d": "Guernica"
+            },
+            "ca": "a"
         }
     ]
 }
